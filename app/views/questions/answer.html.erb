@@ -1,1 +1,22 @@
-<%= @result %>
+  <h1>Stupid Coaching</h1>
+
+<div class="container">
+
+  <div class="ask">
+    <%= params[:ask] %>
+    <br>
+    <br>
+    <%= '- You' %>
+  </div>
+
+  <div class="answer">
+    <%= @result %>
+    <br>
+    <br>
+    <%= '- Your coach' %>
+  </div>
+</div>
+
+  <div class="btn">
+    <%= link_to 'ask a new question', about_path %>
+  </div>
